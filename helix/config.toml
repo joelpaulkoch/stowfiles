@@ -1,0 +1,10 @@
+theme = "onedark"
+[editor]
+auto-save = true
+line-number = "relative"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
