@@ -5,5 +5,5 @@ Steps:
 - install git using system package manager
 - git clone this repo
 - stow it
-- run mise install in this directory
+- run mise trust and mise install
 - enjoy
