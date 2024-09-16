@@ -1,7 +1,13 @@
 theme = "onedark"
+
 [editor]
 auto-save = true
 line-number = "relative"
+cursorline = true
+# cursorcolumn = true
+
+[editor.indent-guides]
+render = true
 
 [editor.file-picker]
 hidden = false
