@@ -20,3 +20,6 @@ python = "latest"
 tokei = "latest"
 zig = "latest"
 
+[settings]
+experimental = true
+
