@@ -5,6 +5,7 @@ if status is-interactive
     alias l 'ls -lAh1'
     alias lg lazygit
     alias lsql lazysql
+    alias y yazi
     alias nixup 'nix flake update ~/nix'
 
     # Interactive shell initialisation
