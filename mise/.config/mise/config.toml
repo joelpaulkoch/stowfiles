@@ -4,7 +4,6 @@ VISUAL = "hx"
 
 [plugins]
 helix = "https://github.com/CSergienko/asdf-helix"
-git = "https://gitlab.com/jcaigitlab/asdf-git"
 
 [tools]
 bat = "latest"
