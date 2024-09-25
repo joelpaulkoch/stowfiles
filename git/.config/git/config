@@ -1,3 +1,10 @@
 [user]
-	email = "joel@joelkoch.dev"
 	name = "Joel Koch"
+	useConfigOnly = true
+
+[init]
+    defaultbranch = main
+
+[alias]
+    personal = "config user.email 'joel@joelkoch.dev'"
+	work = "config user.email 'joel@bitcrowd.net'"
