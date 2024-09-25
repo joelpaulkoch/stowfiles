@@ -23,6 +23,7 @@ programs
       flyctl
       fzf
       gh
+      git-delta
       glab
       htop
       jq
