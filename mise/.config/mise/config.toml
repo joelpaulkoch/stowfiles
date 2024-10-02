@@ -13,11 +13,13 @@ erlang = "latest"
 flyctl = "latest"
 fzf = "latest"
 github-cli = "latest"
+glab = "latest"
 helix = "latest"
 lazygit = "latest"
 python = "latest"
 tokei = "latest"
 zig = "latest"
+go = "latest"
 
 [settings]
 experimental = true
