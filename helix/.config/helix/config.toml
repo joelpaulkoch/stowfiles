@@ -2,6 +2,7 @@ theme = "onedark"
 
 [editor]
 auto-save = true
+auto-format = true
 line-number = "relative"
 cursorline = true
 # cursorcolumn = true
