@@ -12,7 +12,7 @@ if status is-interactive
     set fish_greeting # Disable greeting
 
     if type -q mise
-        ~/.local/bin/mise activate fish | source
+        mise activate fish | source
     end
 
     if type -q asdf
