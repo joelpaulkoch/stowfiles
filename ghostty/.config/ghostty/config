@@ -17,3 +17,4 @@ gtk-tabs-location = bottom
 macos-titlebar-style = tabs
 
 shell-integration = fish
+clipboard-paste-protection = false
