@@ -3,6 +3,7 @@ theme = "onedark"
 [editor]
 auto-save = true
 auto-format = true
+auto-completion = false
 line-number = "relative"
 cursorline = true
 # cursorcolumn = true
