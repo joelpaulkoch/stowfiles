@@ -10,6 +10,10 @@ keybind = ctrl+shift+t=new_tab
 keybind = ctrl+shift+tab=previous_tab
 keybind = ctrl+tab=next_tab
 
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
 window-decoration = false
 
 gtk-tabs-location = bottom
