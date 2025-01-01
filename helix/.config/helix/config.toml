@@ -16,3 +16,6 @@ hidden = false
 
 [editor.lsp]
 display-messages = true
+
+[editor.statusline]
+center = ["version-control"]
