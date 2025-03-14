@@ -39,3 +39,4 @@ programs
       xclip
       xh
       yazi
+      zoxide

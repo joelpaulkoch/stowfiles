@@ -18,4 +18,6 @@ if status is-interactive
     if type -q asdf
         source ~/.asdf/asdf.fish
     end
+
+    zoxide init fish | source
 end
