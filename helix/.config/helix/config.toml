@@ -3,10 +3,14 @@ theme = "onedark"
 [editor]
 auto-save = true
 auto-format = true
-auto-completion = false
+auto-completion = true
+preview-completion-insert = true
 line-number = "relative"
 cursorline = true
+continue-comments = false
+end-of-line-diagnostics = "hint"
 # cursorcolumn = true
+bufferline = "multiple"
 
 [editor.indent-guides]
 render = true
@@ -16,6 +20,7 @@ hidden = false
 
 [editor.lsp]
 display-messages = true
+display-inlay-hints = true
 
 [editor.statusline]
 center = ["version-control"]
