@@ -11,8 +11,6 @@ Steps:
 
 programs 
 
-      act
-      alejandra
       asciinema
       bat
       bottom
@@ -31,11 +29,11 @@ programs
       lazysql
       ncdu
       neofetch
-      nil
       ripgrep
       tailwindcss-language-server
       tokei
       tree
+      wrk
       xclip
       xh
       yazi
