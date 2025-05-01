@@ -19,6 +19,7 @@ font-feature = -liga
 font-feature = -dlig
 
 window-decoration = false
+maximize=true
 
 gtk-tabs-location = bottom
 
