@@ -1,5 +1,6 @@
 if status is-interactive
     # Aliases
+    alias fly flyctl
     alias l 'ls -lAh1'
     alias lg lazygit
     alias lsql lazysql
