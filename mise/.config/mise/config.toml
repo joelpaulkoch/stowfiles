@@ -12,6 +12,7 @@ fzf = "latest"
 github-cli = "latest"
 go = "latest"
 lazygit = "latest"
+"ubi:joelpaulkoch/mdy" = { version = "latest", rename_exe = "mdy"}
 node = "latest"
 python = "latest"
 tokei = "latest"
