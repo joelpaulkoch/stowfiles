@@ -60,6 +60,8 @@ input type:keyboard {
   xkb_options "fkeys:basic_13-24"
 }
 
+seat * xcursor_theme Adwaita
+
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 ### Key bindings
@@ -208,7 +210,7 @@ bindsym $mod+r mode \"resize\"
 #}
 
 exec {
-    gammastep-indicator -O 4500K
+    gammastep-indicator -O 3500K
 }
 
 
@@ -353,7 +355,7 @@ exec_always {
     gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
     test -e $SWAYSOCK.wob || mkfifo $SWAYSOCK.wob
     tail -f $SWAYSOCK.wob | $wob
-    swaync --style /etc/sway/swaync/style.css --config /etc/sway/swaync/config.json
+    swaync --config /etc/sway/swaync/config.json --style /etc/sway/swaync/style.css
 }
 
 exec /usr/libexec/polkit-gnome-authentication-agent-1
