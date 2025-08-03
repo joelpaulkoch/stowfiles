@@ -147,8 +147,7 @@
     "format-connected-battery": " {device_alias} {device_battery_percentage}%",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
     // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
-    // "on-click": "rfkill toggle bluetooth; pkill -SIGRTMIN+8 waybar",
-    "on-click": "wofi-bluetooth",
+    "on-click": "rfkill toggle bluetooth; pkill -SIGRTMIN+8 waybar",
     "on-click-right": "bluetoothctl",
   },
   "pulseaudio": {
