@@ -1,13 +1,12 @@
 {
   "layer": "top", // Waybar at top layer
-  // "position": "bottom", // Waybar position (top|bottom|left|right)
   "height": 30, // Waybar height (to be removed for auto height)
-  // "width": 1280, // Waybar width
-  // "gtk-layer-shell": "false",
-  // Choose the order of the modules
   "modules-left": ["sway/workspaces", "custom/scratchpad", "sway/mode", "tray"],
   "modules-center": ["clock"],
   "modules-right": [
+    "custom/darkmode",
+    "custom/nightlight",
+    "custom/layout",
     "network",
     "cpu",
     "memory",
@@ -41,22 +40,6 @@
     "tooltip": false,
     "exec": "swaymsg -mrt subscribe '[\"input\"]' | jq -r --unbuffered \"select(.change == \\\"xkb_layout\\\") | .input | select(.type == \\\"keyboard\\\") | .xkb_active_layout_name | .[0:2]\"",
   },
-  // Modules configuration
-  //  "sway/workspaces": {
-  //     "disable-scroll": true,
-  //     "all-outputs": true,
-  //     "format": "{name}: {icon}",
-  //     "format-icons": {
-  //         "1": "",
-  //         "2": "",
-  //         "3": "",
-  //         "4": "",
-  //         "5": "",
-  //         "urgent": "",
-  //         "focused": "",
-  //         "default": ""
-  //     }
-  // },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -65,7 +48,7 @@
     },
   },
   "tray": {
-    // "icon-size": 21,
+    "icon-size": 21,
     "spacing": 10,
   },
   "clock": {
@@ -147,7 +130,7 @@
     "format-connected-battery": " {device_alias} {device_battery_percentage}%",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
     // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
-    "on-click": "rfkill toggle bluetooth; pkill -SIGRTMIN+8 waybar",
+    "on-click": "rofi-bluetooth",
     "on-click-right": "bluetoothctl",
   },
   "pulseaudio": {
@@ -166,14 +149,14 @@
     },
     "scroll-step": 10,
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "pavucontrol",
+    "on-click-right": "~/.config/waybar/rofi-audio.sh",
     "tooltip": true,
   },
   "custom/scratchpad": {
     "format-text": "{}",
     "return-type": "json",
     "interval": 3,
-    "exec": "/usr/share/openSUSEway/helpers/scratchpad-indicator.sh 2> /dev/null",
+    "exec": "~/.config/waybar/scratchpad-indicator.sh 2> /dev/null",
     "exec-if": "exit 0",
     "on-click": "swaymsg 'scratchpad show'",
     "on-click-right": "swaymsg 'move scratchpad'",
@@ -193,5 +176,22 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true,
+  },
+  "custom/darkmode": {
+    "format-text": "{}",
+    // "format-icons": {
+    //   "prefer-dark": "D",
+    //   "prefer-light": "L",
+    //   "'prefer-dark'": "D",
+    //   "'prefer-light'": "L",
+    // },
+    "exec": "gsettings get org.gnome.desktop.interface color-scheme | sed \"s/'//g\" | sed \"s/prefer-//g\"",
+    "return-type": "text",
+    "on-click": "~/.config/sway/toggle-dark-mode.sh; swaymsg reload",
+    "escape": false
+  },
+  "custom/nightlight": {
+    "format": "night",
+    "on-click": "pgrep wlsunset | xargs kill -SIGUSR1",
   },
 }

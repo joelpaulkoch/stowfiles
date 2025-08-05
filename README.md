@@ -30,9 +30,14 @@ programs
       ncdu
       neofetch
       ripgrep
+      rofi
+      rofi-bluetooth
+      sway
       tailwindcss-language-server
       tokei
       tree
+      waybar
+      wlsunset
       wrk
       xclip
       xh

@@ -54,6 +54,8 @@ window#waybar.solo {
 #idle_inhibitor,
 #temperature,
 #custom-layout,
+#custom-darkmode,
+#custom-nightlight,
 #backlight {
   margin: 0px 6px 0px 10px;
   /*    min-width: 30px;*/
