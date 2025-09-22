@@ -6,7 +6,7 @@ include ~/.config/sway/appearance.conf
 include ~/.config/sway/input.conf
 include ~/.config/sway/output.conf
 
-
+workspace 1
 
 # openSUSE wallpaper
 # output * bg /usr/share/wallpapers/openSUSEdefault/contents/images/default-dark.png fill
