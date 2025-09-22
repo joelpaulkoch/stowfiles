@@ -17,37 +17,41 @@ keybinding {
     kb-row-up: "Control+p";
 }
 
-@theme "/dev/null"
-
-* {
-  bg: #1e1e2e66;
-  bg-alt: #585b7066;
-  bg-selected: #31324466;
-
-  fg: #cdd6f4;
-  fg-alt: #7f849c;
-
-  
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
-}
+@theme "catppuccin-mocha"
 
 window {
   width: 30%;
-  background-color: @bg;
+}
+
+mainbox {
+  padding: 0;
+  border:  0;
+  children: [inputbar, listview];
+  background-color: @crust;
+}
+
+inputbar {
+  children: [prompt, entry];
+  padding:    1px ;
+  spacing:    1px ;
+  background-color: @crust;
+}
+
+listview {
+  columns: 1;
+  lines: 10;
+  background-color: @crust;
 }
 
 element {
   padding: 8 12;
-  background-color: transparent;
-  text-color: @fg-alt;
+  background-color: @crust;
+  text-color: @lavender;
 }
 
 element selected {
-  text-color: @fg;
-  background-color: @bg-selected;
+  text-color: @text;
+  background-color: @surface0;
 }
 
 element-text {
@@ -57,38 +61,23 @@ element-text {
 }
 
 element-icon {
-  size: 14;
+  size: 1.0em;
   padding: 0 10 0 0;
   background-color: transparent;
 }
 
 entry {
   padding: 12;
-  background-color: @bg-alt;
-  text-color: @fg;
+  background-color: transparent;
+  text-color: @lavender;
 }
 
-inputbar {
-  children: [prompt, entry];
-  background-color: @bg;
-}
-
-listview {
-  background-color: @bg;
-  columns: 1;
-  lines: 10;
-}
-
-mainbox {
-  children: [inputbar, listview];
-  background-color: @bg;
-}
 
 prompt {
   enabled: true;
   padding: 12 0 0 12;
-  background-color: @bg-alt;
-  text-color: @fg;
+  text-color: @lavender;
+  background-color: @crust;
 }
 
 /* vim: ft=sass
