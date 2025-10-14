@@ -1,16 +1,15 @@
-theme = "catppuccin_frappe"
+theme = "catppuccin_macchiato"
 
 [editor]
 auto-save = true
 auto-format = true
-auto-completion = true
+auto-completion = false
 preview-completion-insert = true
-completion-replace = true
+completion-replace = false
 line-number = "absolute"
 cursorline = true
 continue-comments = false
 end-of-line-diagnostics = "hint"
-# cursorcolumn = true
 bufferline = "multiple"
 
 [editor.indent-guides]
