@@ -1,10 +1,13 @@
 [user]
-	name = "Joel Koch"
-	useConfigOnly = true
+    name = "Joel Koch"
+    useConfigOnly = true
 
 [init]
     defaultbranch = main
 
 [alias]
     personal = "config user.email 'joel@joelkoch.dev'"
-	work = "config user.email 'joel@bitcrowd.net'"
+    work = "config user.email 'joel@bitcrowd.net'"
+
+[submodule]
+    recurse = true
