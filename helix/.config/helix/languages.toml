@@ -1,5 +1,6 @@
 [language-server.expert]
 command = "expert"
+args = ["--stdio"]
 
 [[language]]
 name = "elixir"

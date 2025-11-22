@@ -4,13 +4,15 @@ theme = "catppuccin_macchiato"
 auto-save = true
 auto-format = true
 auto-completion = false
+auto-info = true
 preview-completion-insert = true
 completion-replace = false
 line-number = "absolute"
 cursorline = true
 continue-comments = false
-end-of-line-diagnostics = "hint"
+end-of-line-diagnostics = "disable"
 bufferline = "multiple"
+atomic-save = true
 
 [editor.indent-guides]
 render = true
@@ -19,11 +21,16 @@ render = true
 hidden = false
 
 [editor.lsp]
+auto-signature-help = false
 display-messages = true
 display-inlay-hints = false
 
 [editor.statusline]
 center = ["version-control"]
+
+[editor.inline-diagnostics]
+cursor-line = "disable"
+other-lines = "disable"
 
 [keys.normal]
 # Print the current line's git blame information to the statusline.
