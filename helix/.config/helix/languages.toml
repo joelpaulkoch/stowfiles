@@ -2,10 +2,20 @@
 command = "expert"
 args = ["--stdio"]
 
+[language-server.ruby-lsp]
+auto-signature-help = false
+
 [[language]]
 name = "elixir"
 language-servers = ["expert"]
+auto-format = true
 
 [[language]]
 name = "heex"
 language-servers = ["expert"]
+
+[[language]]
+name = "ruby"
+auto-format = true
+language-servers = ["ruby-lsp"]
+file-types = ["rb", "haml"]
