@@ -14,10 +14,11 @@ github-cli = "latest"
 glab = "latest"
 go = "latest"
 lazygit = "latest"
-"ubi:joelpaulkoch/mdy" = { version = "latest", rename_exe = "mdy"}
+"github:joelpaulkoch/mdy" = "latest"
 node = "latest"
 python = "latest"
 tokei = "latest"
+websocat = "latest"
 zig = "latest"
 zls = "latest"
 
