@@ -35,4 +35,4 @@ other-lines = "disable"
 [keys.normal]
 # Print the current line's git blame information to the statusline.
 space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
-space.space = [":insert-output echo %{buffer_name}:%{cursor_line}", "yank_main_selection_to_primary_clipboard", "normal_mode", "delete_selection"]
+space.space = [":insert-output echo %{buffer_name}:%{cursor_line}", "yank_main_selection_to_clipboard", "normal_mode", "delete_selection"]
