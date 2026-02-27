@@ -6,6 +6,8 @@ if status is-interactive
     alias lsql lazysql
     alias y yazi
 
+    abbr be 'bundle exec'
+
     # Environment
     set -gx EDITOR hx
 
