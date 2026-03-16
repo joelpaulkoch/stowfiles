@@ -6,6 +6,9 @@ if status is-interactive
     alias lsql lazysql
     alias y yazi
 
+    abbr mt 'mix test'
+    abbr mtl 'mix test --listen-on-stdin'
+
     # Environment
     set -gx EDITOR hx
 
