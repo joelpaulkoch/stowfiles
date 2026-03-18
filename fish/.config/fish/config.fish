@@ -9,17 +9,18 @@ if status is-interactive
     abbr mt 'mix test'
     abbr mtl 'mix test --listen-on-stdin'
 
+    abbr be 'bundle exec'
+    abbr rubo 'bundle exec rubocop -A'
+    abbr rsp 'bundle exec rspec'
+
     # Environment
     set -gx EDITOR hx
+    set -gx ERL_AFLAGS "-kernel shell_history enabled"
 
     # Interactive shell initialisation
     set fish_greeting # Disable greeting
 
     ~/.local/bin/mise activate fish | source
-
-    if type -q asdf
-        source ~/.asdf/asdf.fish
-    end
 
     zoxide init fish | source
 end
