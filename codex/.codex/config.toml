@@ -1,0 +1,5 @@
+[tui]
+notifications = false
+
+[projects."/home/joel/code/bot_act/lerobot"]
+trust_level = "trusted"
