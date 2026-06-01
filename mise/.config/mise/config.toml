@@ -25,6 +25,7 @@ resvg = "latest"
 rust = "latest"
 tokei = "latest"
 websocat = "latest"
+yazi = "latest"
 zig = "latest"
 zls = "latest"
 
