@@ -13,6 +13,7 @@ if status is-interactive
     abbr rubo 'bundle exec rubocop -A'
     abbr rsp 'bundle exec rspec'
 
+    abbr oc opencode
     # Environment
     set -gx EDITOR hx
     set -gx ERL_AFLAGS "-kernel shell_history enabled"
