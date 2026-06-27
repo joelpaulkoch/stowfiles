@@ -14,6 +14,7 @@ if status is-interactive
     abbr rsp 'bundle exec rspec'
 
     abbr oc opencode
+    abbr pf pitchfork
     # Environment
     set -gx EDITOR hx
     set -gx ERL_AFLAGS "-kernel shell_history enabled"
@@ -22,6 +23,7 @@ if status is-interactive
     set fish_greeting # Disable greeting
 
     ~/.local/bin/mise activate fish | source
+    ~/.local/bin/mise x -- pitchfork activate fish | source
 
     zoxide init fish | source
 end

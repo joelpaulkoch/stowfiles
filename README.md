@@ -33,7 +33,6 @@ programs
       rofi
       rofi-bluetooth
       sway
-      tailwindcss-language-server
       tokei
       tree
       waybar
