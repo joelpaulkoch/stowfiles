@@ -32,3 +32,25 @@ name = "typescript"
 roots = ["biome.json", "biome.jsonc", "package.json"]
 language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 auto-format = true
+
+[[language]]
+name = "javascript"
+roots = ["biome.json", "biome.jsonc", "package.json"]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
+
+[[language]]
+name = "astro"
+roots = ["biome.json", "biome.jsonc", "package.json"]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
+
+[[language]]
+name = "json"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
