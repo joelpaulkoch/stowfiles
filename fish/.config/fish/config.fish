@@ -16,6 +16,8 @@ if status is-interactive
 
     abbr oc opencode
     abbr pf pitchfork
+    abbr ghprf 'gh pr create --fill-first --web'
+
     # Environment
     set -gx EDITOR hx
     set -gx ERL_AFLAGS "-kernel shell_history enabled"
