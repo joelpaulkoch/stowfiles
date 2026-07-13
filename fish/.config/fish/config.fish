@@ -1,4 +1,5 @@
 if status is-interactive
+
     # Aliases
     alias fly flyctl
     alias l 'ls -lAh1'
@@ -24,6 +25,11 @@ if status is-interactive
 
     ~/.local/bin/mise activate fish | source
     ~/.local/bin/mise x -- pitchfork activate fish | source
+
+    set -l aube_bin (mise x -- aube bin -g)
+    if test $status -eq 0 -a -n "$aube_bin"
+        fish_add_path $aube_bin
+    end
 
     zoxide init fish | source
 end
