@@ -25,6 +25,24 @@ if status is-interactive
     # Interactive shell initialisation
     set fish_greeting # Disable greeting
 
+    # helper
+    function rename
+        set old $argv[1]
+        set new $argv[2]
+        set pattern $argv[3]
+
+        if test -z "$old" -o -z "$new"
+            echo "usage: grename OLD NEW [INCLUDE_GLOB]"
+            return 1
+        end
+
+        if test -n "$pattern"
+            rg -l -0 --glob "$pattern" --fixed-strings "$old" | xargs -0 perl -0pi -e "s/\Q$old\E/$new/g"
+        else
+            rg -l -0 --fixed-strings "$old" | xargs -0 perl -0pi -e "s/\Q$old\E/$new/g"
+        end
+    end
+
     ~/.local/bin/mise activate fish | source
     ~/.local/bin/mise x -- pitchfork activate fish | source
 

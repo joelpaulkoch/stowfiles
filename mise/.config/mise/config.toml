@@ -8,9 +8,7 @@ bat = "latest"
 bottom = "latest"
 elixir = "latest"
 erlang = "latest"
-"github:elixir-lang/expert" = "latest"
-flyctl = "latest"
-"forgejo:forgejo-contrib/forgejo-cli" = "latest"
+expert = "latest"
 fzf = "latest"
 github-cli = "latest"
 go = "latest"
@@ -31,5 +29,4 @@ zls = "latest"
 
 [settings]
 experimental = true
-auto_update = true
 
