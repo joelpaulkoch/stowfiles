@@ -38,6 +38,41 @@ url_api = "https://api.github.com/repos/jdx/aube/releases/assets/429771617"
 version = "0.26.1"
 backend = "aqua:sharkdp/bat"
 
+[tools.bat."platforms.linux-arm64"]
+checksum = "sha256:6369242c584065f195fb20cb36fbd7cb63ae690605bbe89868a7596b596c2c23"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323548153"
+
+[tools.bat."platforms.linux-arm64-musl"]
+checksum = "sha256:6369242c584065f195fb20cb36fbd7cb63ae690605bbe89868a7596b596c2c23"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323548153"
+
+[tools.bat."platforms.linux-x64"]
+checksum = "sha256:0dcd8ac79732c0d5b136f11f4ee00e581440e16a44eab5b3105b611bbf2cf191"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549429"
+
+[tools.bat."platforms.linux-x64-musl"]
+checksum = "sha256:0dcd8ac79732c0d5b136f11f4ee00e581440e16a44eab5b3105b611bbf2cf191"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549429"
+
+[tools.bat."platforms.macos-arm64"]
+checksum = "sha256:e30beff26779c9bf60bb541e1d79046250cb74378f2757f8eb250afddb19e114"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323548442"
+
+[tools.bat."platforms.macos-x64"]
+checksum = "sha256:830d63b0bba1fa040542ec569e3cf77f60d3356b9de75116a344b061e0894245"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549786"
+
+[tools.bat."platforms.windows-x64"]
+checksum = "sha256:0f729b4b6f5f28d395c641eacc2e9ff68d0096b85aa0eec344aa62425144b69b"
+url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549116"
+
 [[tools.bottom]]
 version = "0.12.3"
 backend = "aqua:ClementTsang/bottom"
@@ -117,26 +152,47 @@ checksum = "sha256:a9e88cd41fbbba7da6f6dc237a49dd2ed4e70457121035cc7fc56ad05582f
 url = "https://builds.hex.pm/builds/elixir/v1.20.2-otp-29.zip"
 
 [[tools.erlang]]
-version = "29.0.2"
+version = "29.0.6"
 backend = "core:erlang"
 
-[tools.erlang.options]
-precompiled = "if_available"
+[tools.erlang."platforms.linux-arm64"]
+checksum = "sha256:36c89ffdac9d7531c19be0cee34355b167ea95188625d32bee61ebf49ac82afa"
+url = "https://github.com/erlang/otp/releases/download/OTP-29.0.6/otp_src_29.0.6.tar.gz"
+url_api = "https://api.github.com/repos/erlang/otp/releases/assets/539623111"
+install = "source"
+
+[tools.erlang."platforms.linux-arm64-musl"]
+checksum = "sha256:36c89ffdac9d7531c19be0cee34355b167ea95188625d32bee61ebf49ac82afa"
+url = "https://github.com/erlang/otp/releases/download/OTP-29.0.6/otp_src_29.0.6.tar.gz"
+url_api = "https://api.github.com/repos/erlang/otp/releases/assets/539623111"
+install = "source"
+
+[tools.erlang."platforms.linux-x64"]
+checksum = "sha256:36c89ffdac9d7531c19be0cee34355b167ea95188625d32bee61ebf49ac82afa"
+url = "https://github.com/erlang/otp/releases/download/OTP-29.0.6/otp_src_29.0.6.tar.gz"
+url_api = "https://api.github.com/repos/erlang/otp/releases/assets/539623111"
+install = "source"
+
+[tools.erlang."platforms.linux-x64-musl"]
+checksum = "sha256:36c89ffdac9d7531c19be0cee34355b167ea95188625d32bee61ebf49ac82afa"
+url = "https://github.com/erlang/otp/releases/download/OTP-29.0.6/otp_src_29.0.6.tar.gz"
+url_api = "https://api.github.com/repos/erlang/otp/releases/assets/539623111"
+install = "source"
 
 [tools.erlang."platforms.macos-arm64"]
-checksum = "sha256:ec6e09dee496adf646b0a22eef26b769e7f8032c83dd10292c58d50fb38e2210"
-url = "https://github.com/erlef/otp_builds/releases/download/OTP-29.0.2/otp-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/erlef/otp_builds/releases/assets/443541329"
+checksum = "sha256:935ecc08e3ea156d3050536a84338518020c28fa9a977d02671037069cb85a41"
+url = "https://github.com/erlef/otp_builds/releases/download/OTP-29.0.6/otp-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/erlef/otp_builds/releases/assets/539509715"
 
 [tools.erlang."platforms.macos-x64"]
-checksum = "sha256:3da4495ce6372f5fda002ed1ae45832a11e05aaa9928790e0bf1d14e3ee84657"
-url = "https://github.com/erlef/otp_builds/releases/download/OTP-29.0.2/otp-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/erlef/otp_builds/releases/assets/443557769"
+checksum = "sha256:f07c376d6f0810af3acfd90204e9459c76887c07960e78901e2fac170891f1a3"
+url = "https://github.com/erlef/otp_builds/releases/download/OTP-29.0.6/otp-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/erlef/otp_builds/releases/assets/539520619"
 
 [tools.erlang."platforms.windows-x64"]
-checksum = "sha256:dffd5fca2e841267bfb4e961c38bb18436a4b55548deae727d5691a984f7b80f"
-url = "https://github.com/erlang/otp/releases/download/OTP-29.0.2/otp_win64_29.0.2.zip"
-url_api = "https://api.github.com/repos/erlang/otp/releases/assets/443733928"
+checksum = "sha256:c13b374db73c2d7d757eb3317183d74f872354e5746976f18bbd5de46bc95d51"
+url = "https://github.com/erlang/otp/releases/download/OTP-29.0.6/otp_win64_29.0.6.zip"
+url_api = "https://api.github.com/repos/erlang/otp/releases/assets/539580967"
 
 [[tools.flyctl]]
 version = "0.4.61"
@@ -343,6 +399,26 @@ url_api = "https://api.github.com/repos/joelpaulkoch/mdy/releases/assets/2815377
 checksum = "sha256:2b26bf50bc1f29a90400145d2ea24f2da80b9ce235adeddeaff48d321168c346"
 url = "https://github.com/joelpaulkoch/mdy/releases/download/v0.1.2/mdy_linux_gnu_x86_64"
 url_api = "https://api.github.com/repos/joelpaulkoch/mdy/releases/assets/281537752"
+
+[tools."github:joelpaulkoch/mdy"."platforms.linux-x64-musl"]
+checksum = "sha256:2b26bf50bc1f29a90400145d2ea24f2da80b9ce235adeddeaff48d321168c346"
+url = "https://github.com/joelpaulkoch/mdy/releases/download/v0.1.2/mdy_linux_gnu_x86_64"
+url_api = "https://api.github.com/repos/joelpaulkoch/mdy/releases/assets/281537752"
+
+[tools."github:joelpaulkoch/mdy"."platforms.macos-arm64"]
+checksum = "sha256:cf6619c59c600f446bc9deca795de46cdc658b880b5e7a830c97be93bc9f902a"
+url = "https://github.com/joelpaulkoch/mdy/releases/download/v0.1.2/mdy_macos_aarch64"
+url_api = "https://api.github.com/repos/joelpaulkoch/mdy/releases/assets/281537753"
+
+[tools."github:joelpaulkoch/mdy"."platforms.macos-x64"]
+checksum = "sha256:a697b39beec319f247d2a53437e9aa7bb0a9ee4d50ff4a1e80f53aa5cec2d1ee"
+url = "https://github.com/joelpaulkoch/mdy/releases/download/v0.1.2/mdy_macos_x86_64"
+url_api = "https://api.github.com/repos/joelpaulkoch/mdy/releases/assets/281537750"
+
+[tools."github:joelpaulkoch/mdy"."platforms.windows-x64"]
+checksum = "sha256:c0820e8f0c7ab37971d3847d0d1a3678967bcd264fa30bc8fd351c2f361eceee"
+url = "https://github.com/joelpaulkoch/mdy/releases/download/v0.1.2/mdy_windows_x86_64.exe"
+url_api = "https://api.github.com/repos/joelpaulkoch/mdy/releases/assets/281537749"
 
 [[tools.go]]
 version = "1.26.4"
@@ -740,29 +816,36 @@ version = "0.16.0"
 backend = "aqua:zigtools/zls"
 
 [tools.zls."platforms.linux-arm64"]
+checksum = "sha256:430cd293d201eb70ae2519dbc96c854bf8791b8df7fc9392e8d2dc9680a2bed7"
 url = "https://builds.zigtools.org/zls-aarch64-linux-0.16.0.tar.xz"
 provenance = "minisign"
 
 [tools.zls."platforms.linux-arm64-musl"]
+checksum = "sha256:430cd293d201eb70ae2519dbc96c854bf8791b8df7fc9392e8d2dc9680a2bed7"
 url = "https://builds.zigtools.org/zls-aarch64-linux-0.16.0.tar.xz"
 provenance = "minisign"
 
 [tools.zls."platforms.linux-x64"]
+checksum = "sha256:ded6d562a0b86ee878b1ddf70ffab2797ce3cdca3b02d6077548f9d56dff96b6"
 url = "https://builds.zigtools.org/zls-x86_64-linux-0.16.0.tar.xz"
 provenance = "minisign"
 
 [tools.zls."platforms.linux-x64-musl"]
+checksum = "sha256:ded6d562a0b86ee878b1ddf70ffab2797ce3cdca3b02d6077548f9d56dff96b6"
 url = "https://builds.zigtools.org/zls-x86_64-linux-0.16.0.tar.xz"
 provenance = "minisign"
 
 [tools.zls."platforms.macos-arm64"]
+checksum = "sha256:b93ec549f8558a7e85984a840e9276d274f1059b54ade4254296ef4982958359"
 url = "https://builds.zigtools.org/zls-aarch64-macos-0.16.0.tar.xz"
 provenance = "minisign"
 
 [tools.zls."platforms.macos-x64"]
+checksum = "sha256:49f716ea96c1aadaecaa5d9c0a50874cbcf443dc42b825f1e7ee35499ad3eb96"
 url = "https://builds.zigtools.org/zls-x86_64-macos-0.16.0.tar.xz"
 provenance = "minisign"
 
 [tools.zls."platforms.windows-x64"]
+checksum = "sha256:35cbb7163224e8cf92d21099c1b1391f2aba927f25d389f021b13a21d40b96dd"
 url = "https://builds.zigtools.org/zls-x86_64-windows-0.16.0.zip"
 provenance = "minisign"

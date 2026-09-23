@@ -31,4 +31,5 @@ zls = "latest"
 
 [settings]
 experimental = true
+auto_update = true
 
