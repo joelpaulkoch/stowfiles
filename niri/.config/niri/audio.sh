@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# List available sinks and let the user select one
-sinks=$(pactl --format json list sinks | jq -r 'map(.name) | .[]')
+# List available sinks with human-readable descriptions
+sinks=$(pactl --format json list sinks | jq -r '.[] | "\(.description)\t\(.name)"')
 selected=$(echo "$sinks" | fuzzel --dmenu)
 
-# Set the selected sink as the default
+# Extract the sink name (second field, after tab) and set as default
 if [ -n "$selected" ]; then
-    pactl set-default-sink "$selected"
+    selected_name=$(echo "$selected" | cut -f2)
+    pactl set-default-sink "$selected_name"
 fi
