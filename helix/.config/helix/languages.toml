@@ -5,12 +5,10 @@ args = ["--stdio"]
 [language-server.ruby-lsp]
 auto-signature-help = false
 
-[language-server.biome]
-command = "biome"
-args = ["lsp-proxy"]
-
-[language-server.biome.config.biome.inlineConfig]
-formatter.indentStyle = "spaces"
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+config.deno.enable = true
 
 [[language]]
 name = "elixir"
@@ -29,28 +27,22 @@ file-types = ["rb", "haml"]
 
 [[language]]
 name = "typescript"
-roots = ["biome.json", "biome.jsonc", "package.json"]
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+roots = ["deno.json", "deno.jsonc", "package.json"]
 auto-format = true
+language-servers = ["deno-lsp"]
 
 [[language]]
 name = "javascript"
-roots = ["biome.json", "biome.jsonc", "package.json"]
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+roots = ["deno.json", "deno.jsonc", "package.json"]
 auto-format = true
-
-[[language]]
-name = "astro"
-roots = ["biome.json", "biome.jsonc", "package.json"]
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
-auto-format = true
+language-servers = ["deno-lsp"]
 
 [[language]]
 name = "json"
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 auto-format = true
+language-servers = ["deno-lsp"]
 
 [[language]]
 name = "css"
-language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 auto-format = true
+language-servers = ["deno-lsp"]
